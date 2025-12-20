@@ -306,7 +306,7 @@ Team section
    color: #2e2f42;
 }
 
-.container-portfolio-list {
+.portfolio-list {
    display: flex;
    flex-wrap: wrap;
    gap: 48px 24px;
