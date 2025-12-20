@@ -36,6 +36,14 @@ img {
    height: auto;
 }
 
+/* ========
+Global-section-setings
+========= */
+
+.section {
+   padding: 120px 0;
+}
+
 /* =====================
 Container
 ==================== */
@@ -128,8 +136,17 @@ Logo
    padding: 24px 0;
 }
 
-.logo-section {
-   text-align: center;
+.visually-hidden {
+   position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
 }
 
 /* =====================
@@ -137,8 +154,8 @@ Hero section
 ==================== */
 
 .hero {
-   background-color: #2e2f42;
    padding: 188px 0;
+   background-color: #2e2f42;
 }
 
 .hero-container {
@@ -160,7 +177,8 @@ Hero section
 
 .hero-btn {
    min-width: 169px;
-   height: 56px;
+   padding: 16px 32px;
+      min-width: 169px;
    font-family: inherit;
    font-size: 16px;
    font-weight: 500;
@@ -210,13 +228,6 @@ Features section
    line-height: 1.5;
    letter-spacing: 0.02em;
 }
-
-.container-info {
-   max-width: 1158px;
-   padding: 0 15px;
-   margin: 0 auto;
-}
-
 /* =====================
 Team section
 ==================== */
@@ -252,7 +263,7 @@ Team section
 }
 
 .team-card-content {
-   padding: 32px 0;
+   padding-top: 32px;
    text-align: center;
 }
 
@@ -270,15 +281,11 @@ Team section
    color: #434455;
 }
 
-.container-team {
-   max-width: 1158px;
-   padding: 0 15px;
-   margin: 0 auto;
-}
+/* Portfolio section */
 
-/* =====================
-Portfolio section
-==================== */
+.portfolio {
+   padding: 120px 0;
+}
 
 .team-portfolio {
    margin-bottom: 72px;
@@ -290,24 +297,30 @@ Portfolio section
    color: #2e2f42;
 }
 
-.container-portfolio {
-   padding: 120px 0;
+.portfolio-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   text-align: center;
+   color: #2e2f42;
 }
 
-.container-portfolio ul {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+.container-portfolio-list {
+   display: flex;
+   flex-wrap: wrap;
    gap: 48px 24px;
-   max-width: 1200px;
-   margin: 0 auto;
 }
 
 .portfolio-card {
+   width: 360px;
    background-color: #ffffff;
    border: 1px solid #e7e9fc;
+      border-bottom: 1px solid #e7e9fc;
 }
 
-.card-content {
+.portfolio-title {
+   text-align: left;
    padding: 32px 16px 8px;
    font-weight: 500;
    font-size: 20px;
@@ -316,7 +329,7 @@ Portfolio section
    color: #2e2f42;
 }
 
-.card-item {
+.portfolio-category {
    padding: 0 16px 32px;
    font-size: 16px;
    line-height: 1.5;
@@ -331,12 +344,6 @@ Footer
 .page-footer {
    background-color: #2e2f42;
    padding: 100px 0;
-}
-
-.footer-container {
-   max-width: 1158px;
-   padding: 0 15px;
-   margin: 0 auto;
 }
 
 .page-footer .logo {
